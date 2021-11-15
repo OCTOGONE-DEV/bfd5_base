@@ -1,0 +1,79 @@
+// ---------------------------------------------------------------------------//
+// MEDIA QUERY TEMPLATES                                                      //
+// ---------------------------------------------------------------------------//
+@charset "UTF-8";
+
+//                   ORIENTATION
+
+@include orientation(landscape) {
+  /////////// ORIENTATION LANDSCAPE
+}
+
+@include orientation(portrait) {
+  //////////// ORIENTATION PORTRAIT
+}
+
+//                       BREAKPOINT UP
+
+////////////////// BREAKPOINT XS UP
+@include media-breakpoint-up(xs) {}
+
+////////////////// BREAKPOINT SM UP
+@include media-breakpoint-up(sm) {}
+
+////////////////// BREAKPOINT MD UP
+@include media-breakpoint-up(md) {}
+
+////////////////// BREAKPOINT LG UP
+@include media-breakpoint-up(lg) {}
+
+////////////////// BREAKPOINT XL UP
+@include media-breakpoint-up(xl) {}
+
+////////////////// BREAKPOINT XXL UP
+@include media-breakpoint-up(xxl) {}
+
+//                         BREAKPOINT DOWN
+
+////////////////// BREAKPOINT XS DOWN
+@include media-breakpoint-down(xs) {}
+
+////////////////// BREAKPOINT SM DOWN
+@include media-breakpoint-down(sm) {}
+
+////////////////// BREAKPOINT MD DOWN
+@include media-breakpoint-down(md) {}
+
+////////////////// BREAKPOINT LG DOWN
+@include media-breakpoint-down(lg) {}
+
+////////////////// BREAKPOINT XL DOWN
+@include media-breakpoint-down(xl) {}
+
+////////////////// BREAKPOINT XXL DOWN
+@include media-breakpoint-down(xxl) {}
+
+//                         BREAKPOINT ONLY
+
+////////////////// BREAKPOINT XS ONLY
+@include media-breakpoint-only(xs) {}
+
+////////////////// BREAKPOINT SM ONLY
+@include media-breakpoint-only(sm) {}
+
+////////////////// BREAKPOINT MD ONLY
+@include media-breakpoint-only(md) {}
+
+////////////////// BREAKPOINT LG ONLY
+@include media-breakpoint-only(lg) {}
+
+////////////////// BREAKPOINT XL ONLY
+@include media-breakpoint-only(xl) {}
+
+////////////////// BREAKPOINT XXL ONLY
+@include media-breakpoint-only(xxl) {}
+
+//                          BREAKPOINT BETWEEN
+
+////////////// BREAKPOINT BETWEEN : .. - ..
+@include media-breakpoint-between(md,xl) {}

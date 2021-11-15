@@ -1,0 +1,22 @@
+status: true
+dependencies:
+  config:
+    - views.view.who_s_online
+  module:
+    - views
+  theme:
+    - bfd5_base
+id: bfd5_base_views_block__who_s_online_who_s_online_block
+theme: bfd5_base
+region: sidebar_left
+weight: -6
+provider: null
+plugin: 'views_block:who_s_online-who_s_online_block'
+settings:
+  id: 'views_block:who_s_online-who_s_online_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

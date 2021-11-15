@@ -1,0 +1,25 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_table.scss                                                       */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+table {
+  font-weight: 500;
+  font-size  : 1.125rem;
+  line-height: 1.609rem;
+  caption {
+    color: $gray-500;
+  }
+  th {
+    font-weight: 500;
+  }
+  thead {
+    background-color: $primary;
+    color           : $white;
+  }
+  tfoot {
+    background-color: $white;
+    color           : $black;
+  }
+}

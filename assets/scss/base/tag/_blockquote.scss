@@ -1,0 +1,69 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_blockquote.scss                                                  */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+.blockquote {
+  box-shadow : 0 .5rem 1.5rem rgba(56, 56, 56, 0.175) !important;
+  margin     : 1rem;
+  font-size  : 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  text-align : center;
+  color      : $black;
+  position   : relative;
+  quotes     : '“' '”' '‘' '’' '«' '»';
+  padding    : 7rem 1.5rem;
+
+  // [ BREAKPOINT MEDIUM UP ]
+  @include media-breakpoint-up(md) {
+    box-shadow : 0 1rem 3rem rgba(56, 56, 56, 0.175) !important;
+    margin     : 3rem;
+    font-size  : 1.125rem;
+    line-height: 1.625rem;
+    padding    : 6rem 6rem 3rem;
+  }
+  &:before {
+    content  : url('../icon/quote.svg');
+    display  : inline-block;
+    transform: rotate(180deg);
+    position : absolute;
+    left     : 1rem;
+    top      : 1rem;
+
+    // [ BREAKPOINT MEDIUM UP ]
+    @include media-breakpoint-up(md) {
+      left: 2rem;
+      top : 2rem;
+    }
+  }
+  &:after {
+    content : url('../icon/quote.svg');
+    display : inline-block;
+    position: absolute;
+    right   : 1rem;
+    bottom  : 1rem;
+
+    // BREAKPOINT MEDIUM UP
+    @include media-breakpoint-up(md) {
+      left: 2rem;
+      top : 2rem;
+    }
+  }
+  blockquote {
+    position: relative;
+  }
+  .blockquote-footer {
+    font-size  : .875rem;
+    line-height: .875rem;
+    color      : $gray-500;
+    margin-top : 2rem;
+    &:after {
+      content: none;
+    }
+  }
+}
+.blockquote-footer {
+  display: inline-block !important;
+}

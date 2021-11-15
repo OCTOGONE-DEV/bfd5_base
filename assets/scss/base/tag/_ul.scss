@@ -1,0 +1,21 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_ul.scss                                                          */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+ul:not([class]) {
+  padding-left: 3rem;
+  line-height : 24px;
+  li::marker {
+    color    : $secondary;
+    font-size: 1.25em;
+  }
+  li {
+    margin-bottom: 10px;
+    padding-left : .75rem;
+  }
+  ul {
+    padding-left: 1.25rem;
+  }
+}

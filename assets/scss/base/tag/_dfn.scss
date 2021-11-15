@@ -1,0 +1,21 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_dfn.scss                                                         */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+dl {
+  background-color: $gray-100;
+  border-radius   : $border-radius;
+  padding         : 1rem 1.5rem;
+  dt {
+    color: $primary;
+  }
+  dd {
+    padding-bottom: .5rem;
+    border-bottom : $border-width dotted $border-color;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// ---------------------------------------------------------------------------//
+// BOOTSTRAP UTILITIES MODIFICATION                                           //
+// ---------------------------------------------------------------------------//
+
+@charset "UTF-8";
+
+// value in pixel
+
+$utilities: map-merge($utilities, ("letter-spacing": (property: letter-spacing, class: ls, responsive: true, values: $letter-spacing)));

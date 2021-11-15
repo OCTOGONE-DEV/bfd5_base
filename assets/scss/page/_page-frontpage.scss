@@ -1,0 +1,155 @@
+/* ---------------------------------------------------------------------------*/
+/* page/_page-frontpage.scss                                                  */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+.path-frontpage {
+  // node sticky
+  .node--sticky {
+    position: relative;
+    &:after {
+      -webkit-mask       : url('../icon/office-pin.svg');
+      mask               : url('../icon/office-pin.svg');
+      -webkit-mask-size  : cover;
+      mask-size          : cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat        : no-repeat;
+      width              : 50px;
+      height             : 50px;
+      content            : '';
+      display            : inline-block;
+      background-color   : $orange;
+      transform          : translateY(2px);
+      transition         : $transition-base;
+      position           : absolute;
+      right              : -25px;
+      top                : -25px;
+    }
+
+    &:hover {
+      &:after {
+        background-color: lighten($orange, 15%);
+      }
+    }
+  }
+  article.node > h2 {
+    margin-top: .5rem;
+
+    &:before {
+      -webkit-mask       : url('../icon/file-text.svg');
+      mask               : url('../icon/file-text.svg');
+      -webkit-mask-size  : cover;
+      mask-size          : cover;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat        : no-repeat;
+      content            : '';
+      width              : 30px;
+      height             : 30px;
+      display            : inline-block;
+      background-color   : $primary;
+      transform          : translateY(2px);
+      transition         : $transition-base;
+      margin-right       : .25rem;
+    }
+    &:hover {
+      &:before {
+        background-color: darken($primary, 15%);
+      }
+    }
+  }
+
+  article.node .text-formatted {
+    text-align: justify;
+  }
+  article.node--type-page > h2 {
+    &:before {
+      -webkit-mask     : url('../icon/file.svg');
+      mask             : url('../icon/file.svg');
+      -webkit-mask-size: cover;
+      mask-size        : cover;
+      width            : 20px;
+      height           : 27px;
+    }
+
+  }
+  article.node--type-article > h2 {
+    &:before {
+      -webkit-mask     : url('../icon/file-text.svg');
+      mask             : url('../icon/file-text.svg');
+      -webkit-mask-size: cover;
+      mask-size        : cover;
+      width            : 20px;
+      height           : 27px;
+    }
+  }
+
+  article.node--type-book > h2 {
+    &:before {
+      -webkit-mask     : url('../icon/book.svg');
+      mask             : url('../icon/book.svg');
+      -webkit-mask-size: cover;
+      mask-size        : cover;
+    }
+
+  }
+  article.node--type-forum > h2 {
+    &:before {
+      -webkit-mask     : url('../icon/comment-fill.svg');
+      mask             : url('../icon/comment-fill.svg');
+      -webkit-mask-size: cover;
+      mask-size        : cover;
+    }
+  }
+  .box-hp {
+    padding-bottom: 2rem;
+    ///////////// BREAKPOINT MEDIUM UP
+    @include media-breakpoint-up(md) {
+      padding-bottom: 3rem;
+    }
+  }
+  .box-hp:nth-of-type(n+3) article.node {
+    padding-top: 2rem;
+    margin-left: 0;
+    border-top : 1px solid $gray-400;
+    ///////////// BREAKPOINT MEDIUM UP
+    @include media-breakpoint-up(md) {}
+  }
+  article .node__links li {
+    font-size: 90%;
+  }
+  article.node .image-style-wide {
+    margin-top        : 0;
+    margin-bottom     : 1rem;
+    margin-right      : 0;
+    min-width         : 100%;
+    -o-object-fit     : cover;
+    object-fit        : cover;
+    max-height        : 150px;
+    -o-object-position: 0 50%;
+    object-position   : 0 50%;
+  }
+  .col-md-6 > article {
+    height: 100%;
+  }
+  .col-md-6 > article {
+    height: 100%;
+
+    .field--name-body {
+      flex-grow: 1;
+      flex     : 1 1 auto;
+    }
+    .field--name-field-tags {
+      margin-top: 0;
+    }
+    .node__links {
+      margin-left: .5rem;
+    }
+  }
+
+  //user image
+  article.node .field--name-user-picture img[class*="image-style"] {
+    margin-bottom: 0;
+    margin-right : .5rem;
+  }
+}

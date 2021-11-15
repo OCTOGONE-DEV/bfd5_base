@@ -1,0 +1,19 @@
+/* ---------------------------------------------------------------------------*/
+/* component/header/_header-brand.scss                                        */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+#header-brand {
+  img.logo {
+    max-height: 40px;
+    min-width : 40px;
+  }
+  a.navbar-brand {
+    font-weight    : 500;
+    color          : white;
+    font-size      : 1.5rem;
+    text-transform : uppercase;
+    text-decoration: none;
+  }
+}

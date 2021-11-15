@@ -1,0 +1,17 @@
+// ---------------------------------------------------------------------------//
+// BOOTSTRAP TABLE VARIABLE OVERWRITE                                         //
+// ---------------------------------------------------------------------------//
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+// TABLES
+$table-border-color  : $gray-400;
+$table-striped-order : odd;
+$table-bg            : null;
+$table-color         : $gray-dark;
+$table-border-width  : 0;
+$table-cell-padding-y: 1.5rem;
+$table-cell-padding-x: 2rem;
+$table-striped-bg    : $gray-100;

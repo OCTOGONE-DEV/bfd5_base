@@ -1,0 +1,13 @@
+/* ---------------------------------------------------------------------------*/
+/* base/_selection.scss                                                       */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+::-moz-selection {
+  background: $primary;
+  color     : white;
+}
+::selection {
+  background: $primary;
+  color     : white;
+}

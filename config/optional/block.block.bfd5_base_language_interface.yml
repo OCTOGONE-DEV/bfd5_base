@@ -1,0 +1,18 @@
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bfd5_base
+id: bfd5_base_language_interface
+theme: bfd5_base
+region: nav_add
+weight: 2
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: ''
+  provider: language
+  label_display: visible
+visibility: {  }

@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_details.scss                                                     */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+details {
+  border       : $border-width solid $secondary;
+  padding      : .5rem 1.5rem 0 2.5rem;
+  margin       : 1rem 0;
+  border-radius: $border-radius;
+
+  // BREAKPOINT MEDIUM UP
+  @include media-breakpoint-up(md) {
+    margin: 1rem;
+  }
+  summary {
+    outline      : none;
+    margin-left  : -1.65rem;
+    margin-bottom: .5rem;
+    &::marker {
+      color: $secondary;
+    }
+  }
+  &[open] summary ~ * {
+    -webkit-animation: sweep .5s ease-in-out;
+    animation        : sweep .5s ease-in-out;
+  }
+  // specific to drupal
+  .details-wrapper {
+    padding: 0;
+    margin : .5em 0 2em;
+  }
+}
+@-webkit-keyframes sweep {
+  0% {
+    opacity    : 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity    : 1;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,15 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_abbr.scss                                                        */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+abbr {
+  font-size                       : 90%;
+  -webkit-text-decoration         : underline dotted;
+  text-decoration                 : underline dotted;
+  cursor                          : help;
+  border-bottom                   : 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink        : none;
+}

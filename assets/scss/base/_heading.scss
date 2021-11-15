@@ -1,0 +1,65 @@
+/* ---------------------------------------------------------------------------*/
+/* _base/heading.scss                                                         */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+#{headings(1, 6)} {
+  color: $black;
+  a {
+    color                       : $black;
+    -webkit-text-decoration-line: none;
+    text-decoration-line        : none;
+    &:hover {
+      color                       : lighten($black, 15%);
+      -webkit-text-decoration-line: none;
+      text-decoration-line        : none;
+    }
+  }
+}
+.h1,
+h1,
+h1 a {
+  line-height: 2.1rem;
+  color      : $secondary;
+
+  // BREAKPOINT EXTRA X LARGE UP
+  @include media-breakpoint-up(xxl) {
+    font-size  : 2.25rem;
+    line-height: 3.125rem;
+    color      : $secondary;
+  }
+}
+.h2,
+h2,
+h2 a {
+  font-weight  : 500 !important;
+  line-height  : 2.25rem;
+  margin-bottom: .625rem;
+  margin-top   : 1.875rem;
+
+  // BREAKPOINT EXTRA X LARGE UP
+  @include media-breakpoint-up(xxl) {
+    font-weight  : 500;
+    font-size    : 1.875rem;
+    line-height  : 2.25rem;
+    margin-bottom: 1.563rem;
+    margin-top   : 3.75rem;
+  }
+}
+.h3,
+h3,
+h3 a {
+  line-height  : 2.041rem;
+  margin-bottom: 2.5rem;
+  font-weight  : 500 !important;
+}
+.h4,
+h4,
+h4 a {}
+.h5,
+h5,
+h5 a {}
+.h6,
+h6,
+h6 a {}

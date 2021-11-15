@@ -1,0 +1,18 @@
+status: true
+dependencies:
+  module:
+    - shortcut
+  theme:
+    - bfd5_base
+id: bfd5_base_shortcuts
+theme: bfd5_base
+region: sidebar_left
+weight: -14
+provider: null
+plugin: shortcuts
+settings:
+  id: shortcuts
+  label: 'shortcut'
+  provider: shortcut
+  label_display: visible
+visibility: {  }

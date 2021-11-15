@@ -1,0 +1,151 @@
+/* ---------------------------------------------------------------------------*/
+/* base/_icons.scss                                                           */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+// [ VENDOR ]
+.bootstrap {
+  color     : $white;
+  transition: $transition-base;
+  &:hover:before {
+    background-color: $bootstrap;
+  }
+}
+// [ SOCIAL MEDIA ICON ]
+a[class^="social-media-round-"] {
+  font-size: 0;
+  &:before {
+    content   : '';
+    width     : 40px;
+    height    : 40px;
+    display   : inline-block;
+    transition: $transition-base;
+  }
+}
+.social-media-round-facebook {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/facebook.svg');
+            mask            : url('../icon/social-media-round/facebook.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $facebook;
+  }
+  &:hover:before {
+    background-color: lighten($facebook,10%);
+  }
+}
+.social-media-round-messenger {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/messenger.svg');
+            mask            : url('../icon/social-media-round/messenger.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $messenger;
+  }
+  &:hover:before {
+    background-color: lighten($messenger,10%);
+  }
+}
+.social-media-round-instagram {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/instagram.svg');
+            mask            : url('../icon/social-media-round/instagram.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $instagram;
+  }
+  &:hover:before {
+    background-color: lighten($instagram,10%);
+  }
+}
+.social-media-round-twitter {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/twitter.svg');
+            mask            : url('../icon/social-media-round/twitter.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $twitter;
+  }
+  &:hover:before {
+    background-color: lighten($twitter,10%);
+  }
+}
+.social-media-round-whatsapp {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/whatsapp.svg');
+            mask            : url('../icon/social-media-round/whatsapp.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $whatsapp;
+  }
+  &:hover:before {
+    background-color: lighten($whatsapp,10%);
+  }
+}
+.social-media-round-youtube {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/youtube.svg');
+            mask            : url('../icon/social-media-round/youtube.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $youtube;
+  }
+  &:hover:before {
+    background-color: lighten($youtube,10%);
+  }
+}
+.social-media-round-linkedin {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/linkedin.svg');
+            mask            : url('../icon/social-media-round/linkedin.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $linkedin;
+  }
+  &:hover:before {
+    background-color: lighten($linkedin,10%);
+  }
+}
+.social-media-round-skype {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/skype.svg');
+            mask            : url('../icon/social-media-round/skype.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: $skype;
+  }
+  &:hover:before {
+    background-color: lighten($skype,10%);
+  }
+}
+.social-media-round-snapchat {
+  &:before {
+    -webkit-mask            : url('../icon/social-media-round/snapchat.svg');
+            mask            : url('../icon/social-media-round/snapchat.svg');
+    -webkit-mask-size       : contain;
+            mask-size       : contain;
+    -webkit-mask-repeat     : no-repeat;
+            mask-repeat     : no-repeat;
+    background-color: darken($snapchat,10%);
+  }
+  &:hover:before {
+    background-color: darken($snapchat,5%);
+  }
+}

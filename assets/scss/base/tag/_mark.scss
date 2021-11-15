@@ -1,0 +1,12 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_mark.scss                                                        */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+mark {
+  font-size       : 85%;
+  background-color: $yellow;
+  padding         : .10rem .4rem .15rem;
+  border-radius   : $border-radius;
+}

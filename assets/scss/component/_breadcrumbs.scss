@@ -1,0 +1,17 @@
+/* ---------------------------------------------------------------------------*/
+/* component/_breadcrumbs.scss                                                */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+ol.breadcrumb .breadcrumb-item {
+  white-space  : nowrap;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  max-width    : 100px;
+
+  // BREAKPOINT MEDIUM UP
+  @include media-breakpoint-up(md) {
+    max-width: 200px;
+  }
+}

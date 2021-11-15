@@ -1,0 +1,55 @@
+/* ---------------------------------------------------------------------------*/
+/* component/_alert-message.scss                                              */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+// [ BOX ]
+.alert {
+  margin      : 1rem auto;
+  .placeholder {
+    font-weight: 500;
+    a {
+      transition     : $transition-base;
+      text-decoration: none;
+    }
+
+  }
+  position    : relative;
+  padding-left: 4rem;
+  &:before {
+    content    : '';
+    width      : 35px;
+    height     : 35px;
+    position   : absolute;
+    margin-left: -3rem;
+    top        : 50%;
+    transform  : translateY(-50%);
+  }
+  // [ ICON ]
+  &.alert-danger:before {
+    -webkit-mask     : url('../icon/x-circle-fill.svg');
+    mask             : url('../icon/x-circle-fill.svg');
+    -webkit-mask-size: cover;
+    mask-size        : cover;
+    background-color : $red;
+  }
+  &.alert-primary:before {
+    -webkit-mask     : url('../icon/info-fill.svg');
+    mask             : url('../icon/info-fill.svg');
+    -webkit-mask-size: cover;
+    mask-size        : cover;
+    background-color : $cyan;
+  }
+  &.alert-warning:before {
+    -webkit-mask     : url('../icon/alert-circle-fill.svg');
+    mask             : url('../icon/alert-circle-fill.svg');
+    -webkit-mask-size: cover;
+    mask-size        : cover;
+    background-color : $yellow;
+  }
+  // close button
+  .close {
+    transition: $transition-base;
+  }
+}

@@ -1,0 +1,24 @@
+/* ---------------------------------------------------------------------------*/
+/* base/tag/_hr.scss                                                          */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+p + hr {
+  border       : none;
+  border-top   : 2px solid $gray-400;
+  color        : $gray-500;
+  overflow     : visible;
+  text-align   : center;
+  height       : 5px;
+  margin-top   : 2rem;
+  margin-bottom: 2rem;
+  &:after {
+    background: #fff;
+    content   : '§';
+    font-size : 1.75rem;
+    padding   : 0 4px;
+    position  : relative;
+    top       : -21px;
+  }
+}

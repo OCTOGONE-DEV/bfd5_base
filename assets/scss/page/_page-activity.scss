@@ -1,0 +1,15 @@
+/* ---------------------------------------------------------------------------*/
+/* page/_page-activity.scss                                                   */
+/* ---------------------------------------------------------------------------*/
+
+@charset "UTF-8";
+
+// [ COMMON ]
+.path-activity {
+  .marker {
+    color           : $white;
+    margin-left     : .5rem;
+    background-color: lighten($red,10%);
+    padding         : .1rem .4rem;
+  }
+}
